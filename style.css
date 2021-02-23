@@ -1,0 +1,87 @@
+/*
+author = Kaushal Bhatol
+version = 0.1
+purpose = learning css
+*/
+body {
+    background: black url('file:///home/kaushal/Documents/Media/Pictures/wallpaper/Moscow.jpg') no-repeat fixed center;
+    background-position: center;
+}
+h1, h2, h3, h4, footer > p {
+    text-transform: uppercase;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+
+.nav {
+    background-color: bisque;
+    border-radius: 10px;
+    box-shadow: 2px 7px 7px gray;
+    padding: 10px;
+}
+.nav::after {
+    content: "Alpha Teach";
+    position: absolute;
+    font-size: 1.5em;
+    font-weight: bold;
+    top: 29px;
+    left: 2em;
+    font-family: sans-serif;
+    cursor: not-allowed;
+    letter-spacing: 8px;
+    text-shadow: 2px 6px 10px red;
+}
+.nav > ul {
+    list-style-type: none;
+    text-align: right;
+    text-transform: capitalize;
+}
+.nav li {
+    display: inline;
+}
+.nav a {
+    padding: 2px 8px;
+    margin: 0 5px 0 5px;
+    color: black;
+}
+.nav a:hover {
+    color: #31c1d0;
+}
+
+.page_body {
+    background-color: rgba(255, 255, 255, 0.555);
+    margin: 12px 0;
+    padding: 10px 0;
+}
+
+.about_psg {
+    padding: 0 10em 0 10em;
+    position: relative;
+}
+
+.box{
+    position: relative;
+    padding: 0 10px;
+}
+.box > div {
+    width: 25%;
+    height: 45px;
+    background-color: yellow;
+    border: 2px solid black;
+    display: inline-block;
+}
+.first {
+    float: right;
+}
+
+footer {
+    font-size: 0.8em;
+    margin: 2em 0 5px 0;
+    background-color: black;
+    color: white;
+}
+footer > p {
+    padding: 7px;
+}

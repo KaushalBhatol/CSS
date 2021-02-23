@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Box</title>
+    <style type="text/css">
+    body {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    body > div {
+        margin: 20px 0 0 0;
+        position: relative;
+    }
+    div > div {
+        width: 24%;
+        height: 33px;
+        background-color: green;
+        color: white;
+        display: inline-block;
+        text-align: center;
+        padding: 1em 0 0 0;
+    }
+    div > div:hover {
+        background-color: yellow;
+        color: black;
+    }
+    .first {
+        float: right;
+    }
+    .first::before{
+        content: "First";
+    }
+    .first + div::before {
+        content: "second";
+    }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <div class="first"></div>
+        <div></div>
+    </div>
+</body>
+</html>
