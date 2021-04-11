@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prctice 4</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: unset;
+        }
+
+        .container{
+            display: flex;
+            width: 100%;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+            background-color: rgb(182, 226, 131);
+            color: rgb(247, 247, 247);
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 7px;
+        }
+        .container:hover{
+            background-color: black;
+            color: white;
+            box-shadow: 2px 4px 8px red;
+        }
+        .container h1 {
+            font-size: 1.3em;
+            padding-right: 60px;
+            margin: 7px 0;
+        }
+        .container > div {
+            width: 200px;
+            text-align: center;
+        }
+        .container ul {
+            list-style-type: none;
+            word-spacing: 7px;
+            padding: 0;
+            margin: 0;
+        }
+        .container li {
+            display: inline;
+        }
+        .container li a:hover, .container h1:hover {
+            color: red;
+            font-weight: bold;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>Home</h1>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#"> home</a></li>
+                <li><a href="#"> about</a></li>
+                <li><a href="#"> contact</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

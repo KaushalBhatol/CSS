@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06</title>
+    <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            text-decoration: none;
+            color: unset;
+        }
+
+        .nav {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: gold;
+            color: blue;
+            justify-content: space-between;
+            padding: 5px  15px;
+            margin:10px;
+            border-radius: 7px;
+            box-sizing: border-box;
+        }
+        .nav > div {
+            font-size: 1.5em;
+        }
+        .nav ul {
+            padding: 0;
+            list-style-type: none;
+            display: inline;
+        }
+        .nav li {
+            display: inline;
+            font-size: 0.68em;
+            text-transform: capitalize;
+        }
+
+        #sh01 {
+            margin: 80px;
+            padding: 40px;
+            background-color: rgb(97, 151, 32);
+            color: white;
+        }
+        #sh01:hover {
+            box-shadow: 2px 4px 9px gray;
+        }
+        #sh01 > div + div {
+            display: flex;
+            justify-content: center;
+            padding:65px 0 0 0;
+        }
+        #sh01 button {
+            border: 0;
+            border-radius: 4px;
+            margin: 0 15px;
+            width: 80px;
+            padding: 6px;
+            background-color: #263328;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <section class="nav">
+        <div>home</div>
+        <div>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="main">
+        <div id="sh01">
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laboriosam ut in dolore quo vel deserunt quam enim repudiandae rerum repellendus necessitatibus, saepe ratione quibusdam eos tempora velit consectetur facilis animi itaque obcaecati fugit! Consequuntur officia aspernatur ad quis in delectus hic odit commodi? Provident corrupti quia nostrum a modi?</div>
+            <div>
+                <button>Delivery</button>
+                <button>about</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer"></section>
+</body>
+</html>

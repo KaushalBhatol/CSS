@@ -14,14 +14,17 @@
     body > div {
         margin: 20px 0 0 0;
         position: relative;
+        box-sizing: border-box; /*for no horizontal scrool bar */
     }
     div > div {
         width: 24%;
         height: 33px;
         background-color: green;
         color: white;
-        display: inline-block;
+        border-radius: 22px;
+        /* display: inline-block; */
         text-align: center;
+        margin: 0 1em;
         padding: 1em 0 0 0;
     }
     div > div:hover {
@@ -37,8 +40,6 @@
     .first + div::before {
         content: "second";
     }
-
-
     </style>
 </head>
 <body>

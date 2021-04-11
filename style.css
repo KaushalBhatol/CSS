@@ -6,6 +6,7 @@ purpose = learning css
 body {
     background: black url('file:///home/kaushal/Documents/Media/Pictures/wallpaper/Moscow.jpg') no-repeat fixed center;
     background-position: center;
+    min-width: 40em;
 }
 h1, h2, h3, h4, footer > p {
     text-transform: uppercase;
