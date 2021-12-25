@@ -1,0 +1,52 @@
+body {
+    color: red;
+}
+
+@media all {
+
+    /* applied for all screens */
+    body {
+        color: green;
+    }
+}
+
+@media (max-width: 500px) {
+
+    /* when width is below 500px this style will be applied */
+    body {
+        color: orange;
+    }
+}
+
+@media print {
+
+    /* while user printing page  */
+    border {
+        color: blue;
+    }
+}
+
+/* Orinatation */
+
+@media (orientation : portrait) {
+    .subtitle {
+        color: grey;
+    }
+}
+
+/* we can also use two together ex:  */
+
+@media (orientation : portrait) and (max-width: 500px) {
+    .subtitle {
+        color: rgb(117, 221, 103);
+    }
+}
+
+/* for or  */
+/* 
+@media (orientation : portrait) and (max-width: 500px) {
+    .subtitle {
+        color: rgb(117, 221, 103);
+    }
+} 
+*/

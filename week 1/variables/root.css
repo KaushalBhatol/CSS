@@ -1,0 +1,16 @@
+:root {
+    --headig-font-size: 30px;
+    --basic-font-size: 20px;
+}
+
+body>div::before {
+    content: "Hello";
+    font-size: var(--headig-font-size);
+
+}
+
+body>div>div::before {
+    content: "world";
+    font-size: var(--my-font);
+    font-size: var(--basic-font-size);
+}
